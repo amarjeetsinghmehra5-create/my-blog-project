@@ -1,0 +1,264 @@
+body{
+    background: rgb(245, 241, 241);
+}
+.container{
+    display: flex;
+    align-items: center;
+    border: 2px white;
+    padding: 10px 10px;
+    font-weight: 600;
+    background: white;
+}
+.img-2{
+   position: absolute;
+    height: 5vh;
+    margin-right: 40%;
+    margin-left: 40px;
+    margin-top: 7px;
+    align-items: center;
+}
+.blog-123{
+    margin-right: 55%;
+    margin-left: 63px;
+    color: rgba(5, 48, 129, 0.712);
+    font-weight: 1000;
+}
+.para-1{
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+}
+.oara-2{
+     margin-right: 40px;
+}
+.lara-3{
+     margin-right: 4%;
+}
+.btn-1{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px white;
+    background: rgba(5, 48, 129, 0.712);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.collection-footer123{
+    display: flex;
+    column-gap: 18%;
+    /* margin-left: 50px; */
+    margin-top: 2%;
+    background: #000;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.foot{
+    color: white;
+    font-weight: bold;
+}
+.img-1{
+    position:absolute;
+    display: block;
+    height: 5vh;
+    margin-left: 1px;
+    margin-bottom: 50%;    
+}
+.foot{
+    margin-top: 4px;
+    margin-left: 15%;
+}
+.footer-para{
+    text-align: justify;
+    margin-left: 50px;
+}
+#wee{
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    line-height: 1;
+}
+#qww{
+   font-size: small;
+   padding-top: 0;
+   margin-top: 0%;
+}
+.rooter{
+    font-size: medium;
+    justify-content: center;
+    line-height: 2;
+    text-align: justify;
+     font-weight: 200;
+}
+.footer-footer{
+    
+    font-size: medium;
+    justify-content: center;
+    line-height: 2;
+    text-align: justify;
+    font-weight: 200;
+}
+#swerc{
+     margin-bottom: 7px;
+     font-weight: 600;
+}
+#sern{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#rrt{
+     font-weight: 600;
+     line-height: 1;
+    
+}
+.container-footer1{
+    /* margin-left: 12%; */
+    margin-top: 6px;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: medium;
+}
+.last{
+    background: #000;
+    text-align: justify;
+    display: flex;
+    margin-top: 0%;
+    justify-content: center;
+    color: white;
+    font-weight: 200;
+}
+#lasted{
+    font-weight: 600; 
+}
+.image-wee1{
+    height: 5vh;
+    margin-top: 10px;
+}
+
+.lert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 30px auto;
+}
+#oelr{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+#tert{
+    margin: 0;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* NEW: My Blogs cards */
+.myblogs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 30px;
+}
+
+.myblog-card {
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.myblog-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.myblog-content {
+    padding: 18px;
+}
+
+.myblog-content h2 {
+    margin: 0 0 12px;
+    font-size: 21px;
+}
+
+.myblog-content p {
+    margin: 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+
+
+/* NEW: Profile dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #e8f4ff;
+    color: #222;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-arrow {
+    font-size: 16px;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    margin-top: 6px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile-menu a:hover {
+    background: #f2f6fa;
+}
+
+

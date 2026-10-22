@@ -1,0 +1,81 @@
+.forgot-page {
+    height: 60vh;
+    width: 35vw;
+    border: 1px solid rgb(255, 252, 252);
+    box-shadow: 0 0  5px;
+    margin-top: 140px;
+    margin-left: 25%;
+    border-radius: 5px;
+    background: white;
+}
+.forgot-page h1 {
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-weight: 800;
+    padding-top: 30px;
+}
+
+.forgot-page .forms-1 {
+    justify-content: first baseline;
+    align-items: first baseline;
+    text-align: left;
+    margin-left: 18%;
+    margin-top: 70px;
+    font-family: Poppins,sans-serif;
+}
+.forgot-page h2 {
+    font-size: 25px;
+    padding-bottom: 0%;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.forgot-page #para {
+    font-weight: 350;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.forgot-page .email-2 {
+    padding: 4px 200px 4px 5px;
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 4px;
+      padding-top: 10px;
+    padding-bottom: 10px;
+      padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.forgot-page .btn {
+    padding-left: 175px ;
+    padding-right: 175px;
+    margin-top: 20px;
+    padding-top: 7px;
+    color: aliceblue;
+    padding-bottom: 7px;
+    background: rgb(22, 91, 195);
+    border: 1px solid rgb(79, 152, 212);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.forgot-page .btn:hover {
+    background: #3480f3;
+}
+.forgot-page .last{
+    background: white;
+    color: black;
+    margin-right: 26%;
+    margin-top: 10px;
+}
+.forgot-page .yek-1{
+    margin-top: 0%;
+    padding-right: 42%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+.forgot-page .per-1{
+    margin-top: 50px;
+    font-weight: 500;
+}

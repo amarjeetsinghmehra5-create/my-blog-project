@@ -1,0 +1,357 @@
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+@media (max-width: 480px) { .signup-page { margin: 1rem auto; padding: 1.5rem; } }
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: rgb(245, 241, 241);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   2. LOGIN CARD
+========================================= */
+
+.login-page {
+  width: 38%;
+  max-width: 600px;
+  min-width: 320px;
+  min-height: 600px;
+  height: auto;
+  margin: 30px auto;
+  padding: 30px 44px 35px;
+  border: 1px solid rgb(255, 252, 252);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+   3. LOGIN HEADING
+========================================= */
+
+.login-page h1 {
+  margin: 0;
+  padding-top: 8px;
+  color: blue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* =========================================
+   4. FORM CONTAINER
+========================================= */
+
+.login-page .forms-1 {
+  width: 100%;
+  max-width: 100%;
+  margin: 55px auto 0;
+  text-align: left;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.login-page h2 {
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.login-page #para {
+  margin: 0 0 24px;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 1.6;
+}
+
+/* =========================================
+   5. INPUT LABELS
+========================================= */
+
+.login-page label {
+  font-size: 14px;
+}
+
+/* =========================================
+   6. EMAIL AND PASSWORD INPUTS
+========================================= */
+
+.login-page .email-1,
+.login-page .password-1,
+.login-page .email-2,
+.login-page #swer {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 6px 0 20px;
+  padding: 11px 12px;
+  border: 1px solid rgb(175, 173, 173);
+  border-radius: 4px;
+  background: #e8f0fe;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.login-page .email-1:focus,
+.login-page .password-1:focus,
+.login-page .email-2:focus,
+.login-page #swer:focus {
+  outline: 2px solid rgba(22, 91, 195, 0.2);
+  border-color: rgb(22, 91, 195);
+}
+
+.login-page .xll {
+  margin-top: 1px;
+}
+
+/* =========================================
+   7. REMEMBER ME AND FORGOT PASSWORD
+========================================= */
+
+.login-page .check {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding-top: 4px;
+  margin: 0;
+}
+
+.login-page .check label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login-page .check input[type="checkbox"] {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.login-page .mheck {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.login-page a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-page a:hover {
+  text-decoration: underline;
+}
+
+.login-page .check a,
+.login-page .mheck a {
+  padding: 0;
+  font-size: 14px;
+}
+
+/* =========================================
+   8. LOGIN BUTTON
+========================================= */
+
+.login-page .btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 24px 0 12px;
+  padding: 11px 15px;
+  border: 1px solid rgb(79, 152, 212);
+  border-radius: 5px;
+  background: rgb(22, 91, 195);
+  color: aliceblue;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-page .btn:hover {
+  background: #1babd3;
+}
+
+.login-page .btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* =========================================
+   9. CREATE ACCOUNT SECTION
+========================================= */
+
+.login-page .last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  margin: 18px 0 0;
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-page #acc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: blue;
+  font: inherit;
+  cursor: pointer;
+}
+
+.login-page #acc:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   10. TABLET RESPONSIVE
+========================================= */
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .login-page {
+    width: 55%;
+    min-width: 0;
+    max-width: 500px;
+    padding: 28px 35px 35px;
+  }
+
+  .login-page .forms-1 {
+    margin-top: 42px;
+  }
+
+  .login-page h1 {
+    font-size: 31px;
+  }
+}
+
+/* =========================================
+   11. MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+  .login-page {
+    width: calc(100% - 32px);
+    max-width: 420px;
+    min-width: 0;
+    min-height: 0;
+    margin: 20px auto;
+    padding: 25px 22px 30px;
+  }
+
+  .login-page h1 {
+    padding-top: 5px;
+    font-size: 29px;
+  }
+
+  .login-page .forms-1 {
+    width: 100%;
+    margin: 35px auto 0;
+  }
+
+  .login-page h2 {
+    font-size: 19px;
+  }
+
+  .login-page #para {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .login-page .email-1,
+  .login-page .password-1,
+  .login-page .email-2,
+  .login-page #swer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .login-page .check {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .login-page .check label {
+    font-size: 13px;
+  }
+
+  .login-page .check a,
+  .login-page .mheck a {
+    font-size: 13px;
+  }
+
+  .login-page .btn {
+    width: 100%;
+    margin-top: 22px;
+    padding: 11px 12px;
+  }
+
+  .login-page .last {
+    gap: 5px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   12. EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .login-page {
+    width: calc(100% - 20px);
+    margin: 12px auto;
+    padding: 22px 15px 25px;
+  }
+
+  .login-page h1 {
+    font-size: 26px;
+  }
+
+  .login-page .forms-1 {
+    margin-top: 30px;
+  }
+
+  .login-page .check {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .login-page .check a {
+    max-width: 110px;
+    white-space: normal;
+  }
+}

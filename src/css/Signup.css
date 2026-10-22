@@ -1,0 +1,19 @@
+.signup-page { box-sizing: border-box; width: min(100% - 2rem, 30rem); margin: 2rem auto; padding: 2rem; border-radius: .75rem; background: #fff; box-shadow: 0 8px 28px rgb(0 0 0 / 12%); }
+.signup-page h1 { margin: 0 0 2rem; color: #165bc3; font-family: 'Segoe UI', sans-serif; font-size: 2rem; }
+.signup-page .forms-1 { display: grid; gap: .7rem; text-align: left; font-family: Poppins, Arial, sans-serif; }
+.signup-page h2, .signup-page #para { margin: 0; }
+.signup-page #para { margin-bottom: .7rem; color: #5d6470; }
+.signup-page label { font-weight: 600; }
+.signup-page input:not([type='checkbox']) { box-sizing: border-box; width: 100%; padding: .7rem; border: 1px solid #afb5bd; border-radius: .35rem; font: inherit; }
+.signup-page input:focus { outline: 2px solid #165bc3; outline-offset: 1px; }
+.signup-page .check { display: flex; align-items: flex-start; gap: .55rem; margin-top: .5rem; font-weight: 400; }
+.signup-page .check input { margin-top: .25rem; }
+.signup-page .form-message { margin: .25rem 0 0; }
+.signup-page .form-message.error { color: #b42318; }
+.signup-page .form-message.success { color: #067647; }
+.signup-page .btn { width: 100%; margin-top: .5rem; padding: .75rem; color: #fff; background: #165bc3; border: 0; border-radius: .35rem; cursor: pointer; font: inherit; font-weight: 600; }
+.signup-page .btn:hover:not(:disabled) { background: #10499e; }
+.signup-page .btn:disabled { cursor: not-allowed; opacity: .65; }
+.signup-page .last { margin: .5rem 0 0; text-align: center; background:white; color: black;}
+.signup-page a { color: #165bc3; }
+@media (max-width: 480px) { .signup-page { margin: 1rem auto; padding: 1.5rem; } }
