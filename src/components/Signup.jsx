@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../css/Signup.css';
 
 const API_URL = import.meta.env.VITE_API_URL;
+const REGISTER_URL = `${API_URL}/register-user`;
+
 export default function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
