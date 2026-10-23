@@ -37,10 +37,19 @@ body {
   position: relative;
 }
 
-.img-2 {
+/* Active navbar link */
+.active-link {
+    color: #2563eb !important;
+    font-weight: 700;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+
+.img-20099 {
   position: absolute;
   top: 16px;
-  left: 30px;
+  left: 14px;
   height: 34px;
   width: auto;
   max-width: 45px;

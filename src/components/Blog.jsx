@@ -3,12 +3,12 @@ import axios from "axios";
 import "../css/Blog.css";
 import icon from "../assets/icon.png";
 import icon1 from "../assets/icon1.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 
 // NEW: API URLs
-const API_URL = "http://localhost:3000/api/user";
-const SERVER_URL = "http://localhost:3000";
-
+const API_URL = import.meta.env.VITE_API_URL;
+const SERVER_URL = "https://api-blogs-ln5c.onrender.com";
 function Blog() {
     // NEW: blogs, loading and error states
 
@@ -110,13 +110,39 @@ function Blog() {
     return (
         <>
             {/* Existing header */}
-            <img className="img-2" src={icon} alt="blog" />
 
             <div className="container">
+                <img className="img-20099" src={icon} alt="blog" />
                 <h2 className="blog-123123">B l o g s</h2>
-                <Link className="para-1" to="/blog">Home</Link>
-                <Link className="oara-2" to="/myBlogs">My Blogs</Link>
-                <Link className="lara-3" to="/Addblog">Add Blog</Link>
+
+                <NavLink
+                    to="/blog"
+                    end
+                    className={({ isActive }) =>
+                        isActive ? "para-1 active-link" : "para-1"
+                    }
+                >
+                    Home
+                </NavLink>
+
+                <NavLink
+                    to="/myBlogs"
+                    className={({ isActive }) =>
+                        isActive ? "oara-2 active-link" : "oara-2"
+                    }
+                >
+                    My Blogs
+                </NavLink>
+
+                <NavLink
+                    to="/Addblog"
+                    className={({ isActive }) =>
+                        isActive ? "lara-3 active-link" : "lara-3"
+                    }
+                >
+                    Add Blog
+                </NavLink>
+
 
                 {/* NEW: Oliver William profile dropdown */}
                 <div className="profile-dropdown">

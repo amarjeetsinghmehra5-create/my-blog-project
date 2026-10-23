@@ -9,7 +9,7 @@ import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 
 
-const API_URL = "http://localhost:3000/api/user";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Addblogprofile() {
 

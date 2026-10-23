@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/Signup.css';
 
-const REGISTER_URL = "http://localhost:3000/api/user/register-user";
+const API_URL = import.meta.env.VITE_API_URL;
 export default function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

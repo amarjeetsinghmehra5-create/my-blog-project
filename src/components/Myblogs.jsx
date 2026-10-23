@@ -3,16 +3,23 @@ import axios from "axios";
 import '../css/Myblogs.css';
 import icon from "../assets/icon.png";
 import icon1 from "../assets/icon1.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3000/api/user";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Blog() {
-    const [isProfileOpen, setIsProfileOpen] = useState(false);
 
     const [blogs, setBlogs] = useState([]);
     const [blogsLoading, setBlogsLoading] = useState(true);
     const [errorMessage, setErrorMessage] = useState("");
+    const [isProfileOpen, setIsProfileOpen] = useState(false);
+
+    const [userEmail, setUserEmail] = useState("");
+
+    useEffect(() => {
+        setUserEmail(localStorage.getItem("userEmail") || "My Account");
+    }, []);
+
 
     // NEW: Logged-in user ke blogs fetch karo
     useEffect(() => {
@@ -67,12 +74,31 @@ function Blog() {
 
     return (
         <>
-            <img className="img-2" src={icon} alt="blog" />
             <div className="container">
-                <h2 className="blog-123" >Blogs</h2>
-                <Link className="para-1" to="/blog">Home</Link>
-                <Link className="oara-2" to="/myBlogs">My Blogs</Link>
+                <img className="img-23344" src={icon} alt="blog" />
+                <h2 className="blog-1231212" >Blogs</h2>
+
+                <NavLink
+                    to="/blog"
+                    end
+                    className={({ isActive }) =>
+                        isActive ? "para-1 active-link" : "para-1"
+                    }
+                >
+                    Home
+                </NavLink>
+
+                <NavLink
+                    to="/myBlogs"
+                    className={({ isActive }) =>
+                        isActive ? "oara-2 active-link" : "oara-2"
+                    }
+                >
+                    My Blogs
+                </NavLink>
+
                 <Link className="lara-3" to="">Contact us</Link>
+                
 
 
                 {/* NEW: Profile dropdown */}
@@ -82,7 +108,7 @@ function Blog() {
                         onClick={() => setIsProfileOpen(!isProfileOpen)}
                     >
                         <img src={icon1} alt="Profile" className="profile-avatar" />
-                        <span>Oliver William</span>
+                        <span>{userEmail}</span>
                         <span className="profile-arrow">⌄</span>
                     </button>
 
